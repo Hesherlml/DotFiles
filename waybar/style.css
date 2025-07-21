@@ -1,0 +1,281 @@
+* {
+	border: none;
+	border-radius: 10;
+        font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", monospace;
+	font-size: 22px;
+	font-weight: bold;
+	min-height: 10px;
+}
+
+#window {
+  background-color: #1e1e2e;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 10px;
+  border-radius: 10px;
+  margin: 10px 8px 0px 8px;
+  border-bottom: 3px solid #1e1e2e;
+  min-width: 10px;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+/*#window:hover {
+  color: #1e1e2e;
+  background: #cba6f7;
+}*/
+
+window#waybar {
+    background: transparent;
+}
+
+#workspaces {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-right: 4px;
+    background: #1e1e2e;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #1e1e2e;
+    color: #cba6f7;
+    transition: 0.3s;
+}
+
+#workspaces button {
+    color: #cba6f7;
+    transition: 0.3s;
+}
+
+#workspaces button:hover {
+    background: #cba6f7;
+    color: #1e1e2e;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#tray{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #1e1e2e;
+    color: #cba6f7;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #1e1e2e;
+    transition: 0.3s;
+}
+
+#tray menu{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #1e1e2e;
+    color: #cba6f7;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #cba6f7;
+    transition: 0.3s;
+}
+
+#clock {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #1e1e2e;
+    color: #cba6f7;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #1e1e2e;
+    transition: 0.3s;
+}
+
+#clock:hover {
+    color: #32111C;
+    background: #cba6f7;
+}
+
+#pulseaudio {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #1e1e2e;
+    color: #cba6f7;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #1e1e2e;
+    transition: 0.3s;
+}
+
+#pulseaudio:hover {
+    color: #1e1e2e;
+    background: #cba6f7;
+}
+
+#wireplumber {
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #1e1e2e;
+    color: #cba6f7;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #1e1e2e;
+    transition: 0.3s;
+}
+
+#wireplumber:hover {
+    color: #1e1e2e;
+    background: #cba6f7;
+}
+
+#backlight {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #1e1e2e;
+    color: #cba6f7;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #1e1e2e;
+    transition: 0.3s;
+}
+
+#backlight:hover {
+    color: #1e1e2e;
+    background: #cba6f7;
+}
+
+#network {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #1e1e2e;
+    color: #cba6f7;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #1e1e2e;
+    transition: 0.3s;
+}
+
+#network:hover {
+    color: #1e1e2e;
+    background: #cba6f7;
+}
+
+#battery{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    background: #1e1e2e;
+    color: #cba6f7;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #1e1e2e;
+    transition: 0.3s;
+}
+
+#battery:hover{
+    color: #1e1e2e;
+    background: #cba6f7;
+}
+
+
+#bluetooth {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #1e1e2e;
+    color: #cba6f7;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #1e1e2e;
+    transition: 0.3s;
+}
+
+#bluetooth:hover {
+    color: #1e1e2e;
+    background: #cba6f7;
+}
+
+#custom-power {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #1e1e2e;
+    color: #cba6f7;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #1e1e2e;
+    transition: 0.3s;
+}
+
+#custom-power:hover {
+    color: #1e1e2e;
+    background: #cba6f7;
+}
+
+
+/*-----Indicators----*/
+
+#battery.warning:not(.charging) {
+	color: #e6e600;
+}
+
+#battery.charging
+{
+  color: #00D059;
+}
+
+#battery.charging:hover{
+  color: #1e1e2e;
+  background: #cba6f7;
+}
+
+#battery.warning:not(.charging) {
+    color: red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

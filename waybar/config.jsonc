@@ -1,0 +1,96 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "bottom",
+    "position": "top",
+    "height": 0,
+    "modules-left": [ "hyprland/workspaces", "clock" ],
+    "modules-center": [ "hyprland/window" ],
+    "modules-right": [ "pulseaudio#microphone", "wireplumber", "backlight", "network", "battery", "bluetooth", "custom/power" ],
+    "hyprland/window":{
+	"format": "{}"
+    },	
+
+    // Modules configuration
+    "clock": {
+	"format": "{:%I:%M}",
+        "format-alt": "{:%Y/%m/%d}",
+	"tooltip": false
+    },
+
+    "hyprland/window": {
+        "format": "<span color='#cba6f7'></span> <span color='#cdd6f4'> {} </span>",
+        "rewrite": {
+            "": "Desktop"
+      },
+        "max-length": 20,
+        "tooltip": false
+    },
+
+    "backlight": {
+        "format": "{percent}% {icon}",
+	"tooltip": false,
+        "format-icons": ["󰃞", "󰃟", "󰃠"]
+    },
+	
+    "network": {
+	"markup": "pango",
+        "format-wifi": "{icon}  {essid} {ipaddr}",
+	      "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "format-ethernet": "{ipaddr}/{cidr} 󰈀",
+        "format-linked": "{ifname} (No IP) ⚠",
+        "format-disconnected": "󰤫",
+	"tooltip": false,
+	"on-click": "kitty -e 'nmtui'"
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+	"format-charging": " {capacity}%",
+	"format-full": " Charged",
+	"format-alt": "{icon}  {time}",
+        "tooltip": true,
+	"states": {
+	   "warning": 25,
+           "critical": 10
+	},
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "wireplumber": {
+        "scroll-step": 5, // %, can be a float
+        "format": "{volume}% {icon} ",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " ",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "on-click": "pavucontrol",
+        "format-icons": { "headphone": "", "hands-free": "", "headset": "", "phone": "", "portable": "", "car": "", "default": ["", "", ""] }
+   },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": "󰍬",
+        "format-source-muted": "󰍭",
+	"tooltip":false,
+	"on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+   },
+
+    "bluetooth": {
+        "format": "󰂯",
+        // format-* handles every state, so default format is not necessary.
+        "format-on": "󰂯",
+        "format-off": "󰂲",
+	"format-connected": "󰂱 {num_connections}",
+        "format-disabled": "󰂲", // an empty format will hide the module
+	"on-click": "blueman-manager",
+	"on-click-right": "bluetoothctl power off"
+    },
+
+   "custom/power": {
+        "markup": "pango",
+        "tooltip": false,
+        "format" : "⏻",
+	"on-click": "wlogout"
+    }
+}

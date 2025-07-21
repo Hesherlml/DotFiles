@@ -1,0 +1,10 @@
+show-icons=true
+allow-markup=true
+columns=2
+width=40%
+height=40%
+always_parse_args=true
+hide_scroll=true
+allow_images=true
+prompt=Search
+location=center
