@@ -1,13 +1,7 @@
 #!/bin/bash
 
-# Esperar a que hyprpaper cree su socket
-while ! hyprctl hyprpaper ls >/dev/null 2>&1
-do
-  sleep 0.5
-done
-
-wallpaper_directory=/home/solrojo/.config/wallpaper
-wallpaper_history=/home/solrojo/.config/hypr/scripts/wallpaper_history.txt
+wallpaper_directory=~/.config/wallpaper
+wallpaper_history=~/.config/hypr/scripts/wallpaper_history.txt
 
 
 #Crear el archivo del historial si no exite
@@ -15,7 +9,7 @@ touch "$wallpaper_history"
 
 
 #Leer los ultimos 4 wallpapers utilizados
-wallpaper_last=($(tail -n 4 "$wallpaper_history"))
+wallpaper_last=($(tail -n 32 "$wallpaper_history"))
 
 #Busca wallpapers que no se encuentren en el historial
 #Nota: shuf selecciona 1 wallpaper al azar
@@ -37,6 +31,6 @@ hyprctl hyprpaper unload unused
 echo "$wallpaper" >> "$wallpaper_history"
 
 #Mantener solo los 4 ultimos wallpapers en el historial
-tail -n 4 "$wallpaper_history" > "$wallpaper_history.tmp" && mv "$wallpaper_history.tmp" "$wallpaper_history"
+tail -n 32 "$wallpaper_history" > "$wallpaper_history.tmp" && mv "$wallpaper_history.tmp" "$wallpaper_history"
 
 exit 0
