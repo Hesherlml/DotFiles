@@ -2,6 +2,8 @@
 	background-image: none;
 	box-shadow: none;
 	transition: 20ms;
+	font-size: 25px;
+	font-weight: bold;
 }
 
 window {
