@@ -9,12 +9,21 @@
     "hyprland/window":{
 	"format": "{}"
     },	
-
+	
     // Modules configuration
-    "clock": {
-	"format": "{:%I:%M}",
-        "format-alt": "{:%Y/%m/%d}",
-	"tooltip": false
+    "clock": {    
+	"format": "{:%a, %d %b %I:%M %p}",
+	"tooltip-format": "<span>{calendar}</span>",
+	"calendar":{
+		"mode": "month",
+		"format": {
+			"months": "<span color='#ff6699'><b>{}</b></span>",
+			"days": "<span color='#cdd6f4'><b>{}</b></span>",
+			"weekdays": "<span><b>{}</b></span>",
+			"today": "<span color='#7CD37C'><b>{}</b></span>"
+		}
+	},
+	"on-click": ""
     },
 
     "hyprland/window": {
@@ -35,7 +44,7 @@
     "network": {
 	"markup": "pango",
         "format-wifi": "{icon}  {essid} {ipaddr}",
-	      "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
         "format-ethernet": "{ipaddr}/{cidr} 󰈀",
         "format-linked": "{ifname} (No IP) ⚠",
         "format-disconnected": "󰤫",
