@@ -1,6 +1,6 @@
 show-icons=true
 allow-markup=true
-columns=2
+columns=1
 width=40%
 height=40%
 always_parse_args=true
