@@ -11,6 +11,8 @@ Before executing the install script, please make sure you have the following app
 > 
 > hyprpolkitagent
 >
+> hyprshot
+>
 > waybar
 >
 > wlogout
@@ -18,6 +20,8 @@ Before executing the install script, please make sure you have the following app
 > wofi
 >
 > kitty
+>
+> blueman
 >
 > nwg-look
 >
