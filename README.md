@@ -1,5 +1,5 @@
 # INSTALL
-### Warning - Read Carefully
+### ⚠️ Warning - Read Carefully
 Before executing the install script, please make sure you have the following applications and fonts already installed in your system : 
 > wget
 >
@@ -46,9 +46,9 @@ Before executing the install script, please make sure you have the following app
 `chmod +x install.sh && ./install.sh
 `
 
-### ENJOY !
+### 🔥 ENJOY 🔥
 
-# SCREENSHOTS
+# SCREENSHOTS 👀
 ### Desktop
 <img width="2560" height="1600" alt="2025-08-17-011423_hyprshot" src="https://github.com/user-attachments/assets/604e859d-d534-45dc-8cba-23f20879e45c" />
 
