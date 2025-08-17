@@ -1,5 +1,7 @@
 #!/bin/bash
-
+# #######################################################################################
+# # /* ---- 🐧 https://github.com/Solrojo-Script 🐧 ---- */  #
+# #######################################################################################
 wallpaper_directory=~/.config/wallpaper
 wallpaper_history=~/.config/hypr/scripts/wallpaper_history.txt
 
