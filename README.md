@@ -1,4 +1,4 @@
-# INSTALL
+# INSTALLATION
 ### ⚠️ Warning - Read Carefully
 Before executing the install script, please make sure you have the following applications and fonts already installed in your system : 
 > wget
